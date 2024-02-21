@@ -5,17 +5,22 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from "@chakra-ui/react";
+
 function App() {
   return (
     <>
-      <div>
-        <p>Hello</p>
-        <Header />
-        <Showcase />
-        <Skills />
-        <Contact />
-        <Footer />
-      </div>
+      <ChakraProvider>
+        <div>
+          <p>Hello</p>
+          <Header />
+          <Showcase />
+          <Skills />
+          <Contact />
+          <Footer />
+        </div>
+      </ChakraProvider>
     </>
   );
 }
