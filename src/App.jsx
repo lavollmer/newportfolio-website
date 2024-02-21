@@ -1,10 +1,20 @@
 import "./App.css";
+import Header from "./components/Header";
+import Showcase from "./components/Showcase";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <div>
         <p>Hello</p>
+        <Header />
+        <Showcase />
+        <Skills />
+        <Contact />
+        <Footer />
       </div>
     </>
   );
