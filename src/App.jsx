@@ -5,7 +5,9 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-// 1. import `ChakraProvider` component and extendBaseTheme
+// 1. import `ChakraProvider` component
+import { ChakraProvider } from "@chakra-ui/react";
+
 import {
   ChakraBaseProvider,
   extendBaseTheme,
@@ -26,11 +28,11 @@ function App() {
       <ChakraProvider theme={theme}>
         <div>
           <p>Hello</p>
-          <Header {...pageProps} />
-          <Showcase {...pageProps} />
-          <Skills {...pageProps} />
-          <Contact {...pageProps} />
-          <Footer {...pageProps} />
+          <Header />
+          <Showcase />
+          <Skills />
+          <Contact />
+          <Footer />
         </div>
       </ChakraProvider>
     </>
