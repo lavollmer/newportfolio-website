@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <>
       <div>
-        <Box textStyle="h1">
+        <Box color="white">
           <Heading>Laura Vollmer</Heading>
         </Box>
         <Box bg="tomato" w="100%" p={4} color="white">

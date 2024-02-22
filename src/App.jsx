@@ -1,6 +1,7 @@
 import "./App.css";
+import Main from "./components/Main";
 import Header from "./components/Header";
-import NavBar from "./components/NavBar";
+import SideNav from "./components/Sidenav";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -22,14 +23,15 @@ function App() {
   return (
     <>
       <div>
-        <Box w={[300, 400, 500]}>
-          <NavBar />
-          <Header />
-          <Project />
-          <Skills />
-          <Contact />
-          <Footer />
-        </Box>
+        {/* <Box w={[300, 400, 500]} bg="black"> */}
+        <SideNav />
+        <Header />
+        <Main />
+        <Project />
+        <Skills />
+        <Contact />
+        <Footer />
+        {/* </Box> */}
       </div>
     </>
   );
