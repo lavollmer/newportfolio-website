@@ -1,16 +1,19 @@
 import React from "react";
-import { Image } from "@chakra-ui/react";
 import backgroundImage from "../assets/background.jpg";
+import { Box, Heading } from "@chakra-ui/react";
 
 const Main = () => {
   return (
     <div>
-      <Image
-        src={backgroundImage}
-        alt="Night sky background image"
-        objectFit="cover"
-        height="100vh"
-      />
+      <Box
+        bgImage={`url(${backgroundImage})`}
+        bgSize="cover"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        h="100vh"
+      >
+        <Heading>Laura Vollmer</Heading>
+      </Box>
     </div>
   );
 };

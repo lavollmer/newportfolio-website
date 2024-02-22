@@ -1,6 +1,5 @@
 import "./App.css";
 import Main from "./components/Main";
-import Header from "./components/Header";
 import SideNav from "./components/Sidenav";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
@@ -25,7 +24,6 @@ function App() {
       <div>
         {/* <Box w={[300, 400, 500]} bg="black"> */}
         <SideNav />
-        <Header />
         <Main />
         <Project />
         <Skills />
