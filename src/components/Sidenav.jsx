@@ -42,7 +42,12 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
-          <NavItem navSize={navSize} Icon={FiHome} title="Dashboard" />
+          <NavItem
+            navSize={navSize}
+            Icon={FiHome}
+            title="Dashboard"
+            description="Dashboard"
+          />
           <NavItem navSize={navSize} Icon={VscProject} title="Projects" />
           <NavItem navSize={navSize} Icon={RxAvatar} title="About" />
           <NavItem navSize={navSize} Icon={AiOutlineAlignLeft} title="Skills" />

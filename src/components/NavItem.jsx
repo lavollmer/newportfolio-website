@@ -50,7 +50,7 @@ const NavItem = ({ navSize, title, Icon, active, description }) => {
           h={200}
           ml={5}
         >
-          <NavHoverBox title={title} icon={icon} description={description} />
+          <NavHoverBox title={title} Icon={FiHome} description={description} />
         </MenuList>
       </Menu>
     </>
