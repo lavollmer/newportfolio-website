@@ -49,15 +49,15 @@ const Sidenav = () => {
           <NavItem navSize={navSize} Icon={AiFillCamera} title="Design" />
           <NavItem navSize={navSize} Icon={AiFillMail} title="Contact" />
         </Flex>
-        <Flex
+        {/* <Flex
           p="5%"
           flexDir="column"
           w="100%"
           alignItems={navSize == "small" ? "center" : "flex-start"}
           mb={4}
-        >
-          <Divider display={navSize == "small" ? "none" : "flex"} />
-          <Flex mt={4} align="center">
+        > */}
+        {/* <Divider display={navSize == "small" ? "none" : "flex"} /> */}
+        {/* <Flex mt={4} align="center">
             <FaStar color="blue" />
             <Flex
               flexDir="column"
@@ -69,8 +69,8 @@ const Sidenav = () => {
               </Heading>
               <Text color="gray">Admin</Text>
             </Flex>
-          </Flex>
-        </Flex>
+          </Flex> */}
+        {/* </Flex> */}
       </Flex>
     </>
   );

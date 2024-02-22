@@ -9,8 +9,9 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { FiHome } from "react-icons/fi";
+import NavHoverBox from "./NavHoverBox";
 
-const NavItem = ({ navSize, title, Icon, active }) => {
+const NavItem = ({ navSize, title, Icon, active, description }) => {
   return (
     <>
       <Flex
@@ -23,18 +24,34 @@ const NavItem = ({ navSize, title, Icon, active }) => {
       <Menu placement="right">
         <Link
           backgroundColor={active && "white"}
-          p={3}
+          p={5}
           borderRadius={8}
           _hover={{ textDecor: "none", backgroundColor: "white" }}
           w={navSize == "large" && "100%"}
         >
-          <MenuButton>
+          <MenuButton w="100%">
             <Flex>
-              <Icon as={FiHome} />
-              <Text>{title}</Text>
+              <Icon
+                as={FiHome}
+                fontSize="xl"
+                color={active ? "green" : "gray"}
+              />
+              <Text ml={5} display={navSize == "small" ? "none" : "flex"}>
+                {title}
+              </Text>
             </Flex>
           </MenuButton>
         </Link>
+        <MenuList
+          //padding top and bottom
+          py={0}
+          border="none"
+          w={200}
+          h={200}
+          ml={5}
+        >
+          <NavHoverBox title={title} icon={icon} description={description} />
+        </MenuList>
       </Menu>
     </>
   );
