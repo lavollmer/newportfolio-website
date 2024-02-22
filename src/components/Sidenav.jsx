@@ -1,7 +1,7 @@
 import React from "react";
 import { Divider, Text, Flex, Heading, IconButton } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
-import { FiHome, FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import NavItem from "./NavItem";
 import { VscProject } from "react-icons/vsc";
@@ -9,6 +9,7 @@ import { RxAvatar } from "react-icons/rx";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { AiFillCamera } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
+import { FiHome } from "react-icons/fi";
 
 const Sidenav = () => {
   //NavBar is at the large state default
@@ -41,12 +42,12 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
-          <NavItem navSize={navSize} icon={FiHome} title="Dashboard" />
-          <NavItem navSize={navSize} icon={VscProject} title="Projects" />
-          <NavItem navSize={navSize} icon={AiFillCamera} title="Design" />
-          <NavItem navSize={navSize} icon={RxAvatar} title="About" />
-          <NavItem navSize={navSize} icon={AiOutlineAlignLeft} title="Skills" />
-          <NavItem navSize={navSize} icon={AiFillMail} title="Contact" />
+          <NavItem navSize={navSize} Icon={FiHome} title="Dashboard" />
+          <NavItem navSize={navSize} Icon={VscProject} title="Projects" />
+          <NavItem navSize={navSize} Icon={RxAvatar} title="About" />
+          <NavItem navSize={navSize} Icon={AiOutlineAlignLeft} title="Skills" />
+          <NavItem navSize={navSize} Icon={AiFillCamera} title="Design" />
+          <NavItem navSize={navSize} Icon={AiFillMail} title="Contact" />
         </Flex>
         <Flex
           p="5%"

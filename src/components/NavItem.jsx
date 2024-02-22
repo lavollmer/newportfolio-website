@@ -8,8 +8,9 @@ import {
   MenuButton,
   MenuList,
 } from "@chakra-ui/react";
+import { FiHome } from "react-icons/fi";
 
-const NavItem = ({ navSize, title, Icon }) => {
+const NavItem = ({ navSize, title, Icon, active }) => {
   return (
     <>
       <Flex
@@ -20,10 +21,16 @@ const NavItem = ({ navSize, title, Icon }) => {
         alignItems={navSize == "small" ? "center" : "flex-start"}
       ></Flex>
       <Menu placement="right">
-        <Link>
+        <Link
+          backgroundColor={active && "white"}
+          p={3}
+          borderRadius={8}
+          _hover={{ textDecor: "none", backgroundColor: "white" }}
+          w={navSize == "large" && "100%"}
+        >
           <MenuButton>
             <Flex>
-              <Icon as={Icon} />
+              <Icon as={FiHome} />
               <Text>{title}</Text>
             </Flex>
           </MenuButton>
