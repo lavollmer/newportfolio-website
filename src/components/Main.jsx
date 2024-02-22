@@ -11,6 +11,7 @@ const Main = () => {
         bgPosition="center"
         bgRepeat="no-repeat"
         h="100vh"
+        zIndex={10}
       >
         <Box
           display="flex"

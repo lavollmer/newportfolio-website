@@ -1,10 +1,12 @@
 import "./App.css";
 import Main from "./components/Main";
 import SideNav from "./components/Sidenav";
-import Skills from "./components/Skills";
+import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Project from "./components/Project";
+import Project from "./components/Skill";
+import React from "react";
+import { useEffect } from "react";
 
 //mobile responsive design
 const breakpoints = {
@@ -17,13 +19,29 @@ const breakpoints = {
 };
 
 function App() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const sidenav = document.querySelector(".sidenav");
+      if (window.pageYOffset > 0) {
+        sidenav.classList.add("fixed");
+      } else {
+        sidenav.classList.remove("fixed");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div>
-        <SideNav />
         <Main />
+        <SideNav />
         <Project />
-        <Skills />
+        <Skill />
         <Contact />
         <Footer />
       </div>
