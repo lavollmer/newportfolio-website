@@ -3,6 +3,7 @@ import { Divider, Text, Flex, Heading, IconButton } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
+import NavItem from "./NavItem";
 
 const Sidenav = () => {
   //NavBar is at the large state default
@@ -35,6 +36,7 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
+          <NavItem navSize={navSize} />
         </Flex>
         <Flex
           p="5%"
