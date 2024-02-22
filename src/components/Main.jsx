@@ -12,7 +12,14 @@ const Main = () => {
         bgRepeat="no-repeat"
         h="100vh"
       >
-        <Heading>Laura Vollmer</Heading>
+        <Box>
+          <Heading size={{ base: "xl", md: "2xl" }} color={"white"}>
+            Laura Vollmer
+          </Heading>
+          <p size={{ base: "xl", md: "2xl" }} color="white">
+            Software Developer
+          </p>
+        </Box>
       </Box>
     </div>
   );
