@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../assets/background.jpg";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 
 const Main = () => {
   return (
@@ -12,13 +12,26 @@ const Main = () => {
         bgRepeat="no-repeat"
         h="100vh"
       >
-        <Box>
-          <Heading size={{ base: "xl", md: "2xl" }} color={"white"}>
+        <Box
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+          pt="100px"
+        >
+          <Heading size={{ base: "xl", md: "2xl" }} color="white">
             Laura Vollmer
           </Heading>
-          <p size={{ base: "xl", md: "2xl" }} color="white">
+        </Box>
+        <Box
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Heading size={{ base: "lg", md: "xl" }} color="white">
             Software Developer
-          </p>
+          </Heading>
         </Box>
       </Box>
     </div>
