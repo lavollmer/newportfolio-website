@@ -1,9 +1,14 @@
 import React from "react";
 import { Divider, Text, Flex, Heading, IconButton } from "@chakra-ui/react";
 import { FaStar } from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
+import { FiHome, FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import NavItem from "./NavItem";
+import { VscProject } from "react-icons/vsc";
+import { RxAvatar } from "react-icons/rx";
+import { AiOutlineAlignLeft } from "react-icons/ai";
+import { AiFillCamera } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
 
 const Sidenav = () => {
   //NavBar is at the large state default
@@ -36,7 +41,12 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
-          <NavItem navSize={navSize} />
+          <NavItem navSize={navSize} icon={FiHome} title="Dashboard" />
+          <NavItem navSize={navSize} icon={VscProject} title="Projects" />
+          <NavItem navSize={navSize} icon={AiFillCamera} title="Design" />
+          <NavItem navSize={navSize} icon={RxAvatar} title="About" />
+          <NavItem navSize={navSize} icon={AiOutlineAlignLeft} title="Skills" />
+          <NavItem navSize={navSize} icon={AiFillMail} title="Contact" />
         </Flex>
         <Flex
           p="5%"
