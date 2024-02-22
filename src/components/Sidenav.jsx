@@ -19,7 +19,12 @@ const Sidenav = () => {
         w={navSize == "small" ? "75px" : "200px"}
         justifyContent="space-between"
       >
-        <Flex p="5%" flexDir="column" alignItems="flexStart" as="nav">
+        <Flex
+          p="5%"
+          flexDir="column"
+          alignItems={navSize == "small" ? "center" : "flex-start"}
+          as="nav"
+        >
           <IconButton
             background="none"
             mt={5}
@@ -31,15 +36,25 @@ const Sidenav = () => {
             }}
           />
         </Flex>
-        <Flex p="5%" flexDir="column" w="100%" alignItems="flex-start" mb={4}>
-          <Divider display={navSize === "small" ? "none" : "flex"} />
+        <Flex
+          p="5%"
+          flexDir="column"
+          w="100%"
+          alignItems={navSize == "small" ? "center" : "flex-start"}
+          mb={4}
+        >
+          <Divider display={navSize == "small" ? "none" : "flex"} />
           <Flex mt={4} align="center">
             <FaStar color="blue" />
-            <Flex flexDir="column" ml={4}>
+            <Flex
+              flexDir="column"
+              ml={4}
+              display={navSize === "small" ? "none" : "flex"}
+            >
               <Heading as="h3" size="sm" color="gray">
                 Laura Vollmer
               </Heading>
-              <Text>Admin</Text>
+              <Text color="gray">Admin</Text>
             </Flex>
           </Flex>
         </Flex>
