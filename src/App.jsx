@@ -5,8 +5,6 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
-import { Box } from "@chakra-ui/react";
-import { useState } from "react";
 
 //mobile responsive design
 const breakpoints = {
@@ -22,14 +20,12 @@ function App() {
   return (
     <>
       <div>
-        {/* <Box w={[300, 400, 500]} bg="black"> */}
         <SideNav />
         <Main />
         <Project />
         <Skills />
         <Contact />
         <Footer />
-        {/* </Box> */}
       </div>
     </>
   );

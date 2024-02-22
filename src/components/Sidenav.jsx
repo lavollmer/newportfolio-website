@@ -1,6 +1,5 @@
 import React from "react";
-import { Divider, Text, Flex, Heading, IconButton } from "@chakra-ui/react";
-import { FaStar } from "react-icons/fa";
+import { Flex, IconButton } from "@chakra-ui/react";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import NavItem from "./NavItem";
@@ -25,6 +24,7 @@ const Sidenav = () => {
         borderRadius={navSize == "small" ? "15px" : "30px"}
         w={navSize == "small" ? "75px" : "200px"}
         justifyContent="space-between"
+        zIndex="100"
       >
         <Flex
           p="5%"
@@ -42,12 +42,8 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
-          <NavItem
-            navSize={navSize}
-            Icon={FiHome}
-            title="Dashboard"
-            description="Dashboard"
-          />
+          <NavItem navSize={navSize} Icon={FiHome} title="Dashboard" />
+
           <NavItem navSize={navSize} Icon={VscProject} title="Projects" />
           <NavItem navSize={navSize} Icon={RxAvatar} title="About" />
           <NavItem navSize={navSize} Icon={AiOutlineAlignLeft} title="Skills" />
