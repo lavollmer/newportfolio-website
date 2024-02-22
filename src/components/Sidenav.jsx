@@ -5,7 +5,8 @@ import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 
 const Sidenav = () => {
-  const [navSize, changeNavSize] = useState("large")
+  //NavBar is at the large state default
+  const [navSize, changeNavSize] = useState("large");
   return (
     <div>
       <Flex
@@ -14,7 +15,8 @@ const Sidenav = () => {
         h="95vh"
         marginTop="2.5vh"
         boxShadow="0 4px 12px 0 rgba(0,0,0,0.5)"
-        w="200px"
+        borderRadius={navSize == "small" ? "15px" : "30px"}
+        w={navSize == "small" ? "75px" : "200px"}
         justify-content="space-between"
       >
         <Flex p="5%" flexDir="column" alignItems="flexStart" as="nav">
@@ -23,7 +25,10 @@ const Sidenav = () => {
             mt={5}
             _hover={{ background: "none" }}
             icon={<FiMenu />}
-            onClick={{} =>{}}
+            onClick={() => {
+              if (navSize === "small") changeNavSize("large");
+              else changeNavSize("small");
+            }}
           />
         </Flex>
         <Flex p="5%" flexDir="column" w="100%" alignItems="flex-start" mb={4}>
