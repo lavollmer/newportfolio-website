@@ -8,7 +8,7 @@ const Sidenav = () => {
   //NavBar is at the large state default
   const [navSize, changeNavSize] = useState("large");
   return (
-    <div>
+    <>
       <Flex
         pos="sticky"
         left="5px"
@@ -17,7 +17,7 @@ const Sidenav = () => {
         boxShadow="0 4px 12px 0 rgba(0,0,0,0.5)"
         borderRadius={navSize == "small" ? "15px" : "30px"}
         w={navSize == "small" ? "75px" : "200px"}
-        justify-content="space-between"
+        justifyContent="space-between"
       >
         <Flex p="5%" flexDir="column" alignItems="flexStart" as="nav">
           <IconButton
@@ -32,7 +32,7 @@ const Sidenav = () => {
           />
         </Flex>
         <Flex p="5%" flexDir="column" w="100%" alignItems="flex-start" mb={4}>
-          <Divider />
+          <Divider display={navSize === "small" ? "none" : "flex"} />
           <Flex mt={4} align="center">
             <FaStar color="blue" />
             <Flex flexDir="column" ml={4}>
@@ -44,7 +44,7 @@ const Sidenav = () => {
           </Flex>
         </Flex>
       </Flex>
-    </div>
+    </>
   );
 };
 
