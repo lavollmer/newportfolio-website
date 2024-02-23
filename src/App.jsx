@@ -1,5 +1,6 @@
 import "./App.css";
 import Main from "./components/Main";
+import About from "./components/About";
 import SideNav from "./components/Sidenav";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -41,6 +42,7 @@ function App() {
         <Main />
         <SideNav />
         <Project />
+        <About />
         <Skill />
         <Contact />
         <Footer />
