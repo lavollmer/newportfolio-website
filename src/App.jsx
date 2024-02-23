@@ -1,10 +1,10 @@
 import "./App.css";
 import Main from "./components/Main";
 import SideNav from "./components/Sidenav";
-import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Project from "./components/Skill";
+import Project from "./components/Project";
+import Skill from "./components/Skill";
 import React from "react";
 import { useEffect } from "react";
 

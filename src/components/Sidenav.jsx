@@ -42,7 +42,7 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
-          <NavItem navSize={navSize} Icon={FiHome} title="Dashboard" />
+          <NavItem navSize={navSize} Icon={FiHome} title="Home" />
 
           <NavItem navSize={navSize} Icon={VscProject} title="Projects" />
           <NavItem navSize={navSize} Icon={RxAvatar} title="About" />
@@ -50,28 +50,6 @@ const Sidenav = () => {
           <NavItem navSize={navSize} Icon={AiFillCamera} title="Design" />
           <NavItem navSize={navSize} Icon={AiFillMail} title="Contact" />
         </Flex>
-        {/* <Flex
-          p="5%"
-          flexDir="column"
-          w="100%"
-          alignItems={navSize == "small" ? "center" : "flex-start"}
-          mb={4}
-        > */}
-        {/* <Divider display={navSize == "small" ? "none" : "flex"} /> */}
-        {/* <Flex mt={4} align="center">
-            <FaStar color="blue" />
-            <Flex
-              flexDir="column"
-              ml={4}
-              display={navSize === "small" ? "none" : "flex"}
-            >
-              <Heading as="h3" size="sm" color="gray">
-                Laura Vollmer
-              </Heading>
-              <Text color="gray">Admin</Text>
-            </Flex>
-          </Flex> */}
-        {/* </Flex> */}
       </Flex>
     </>
   );
