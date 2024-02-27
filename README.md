@@ -2,6 +2,8 @@
 
 ## Project Description
 
+This project uses ReactJS, JavaScript, HTML, and CSS.
+
 ## Table of Contents
 
 ## Credits
