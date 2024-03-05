@@ -8,8 +8,8 @@ import {
   MenuButton,
   MenuList,
 } from "@chakra-ui/react";
-import { FiHome } from "react-icons/fi";
-import NavHoverBox from "./NavHoverBox";
+// import { FiHome } from "react-icons/fi";
+// import NavHoverBox from "./NavHoverBox";
 
 const NavItem = ({ navSize, title, Icon, active, description }) => {
   return (
@@ -51,7 +51,7 @@ const NavItem = ({ navSize, title, Icon, active, description }) => {
           h={200}
           ml={5}
         >
-          <NavHoverBox title={title} Icon={FiHome} description={description} />
+          {/* <NavHoverBox title={title} Icon={FiHome} description={description} /> */}
         </MenuList>
       </Menu>
     </>
