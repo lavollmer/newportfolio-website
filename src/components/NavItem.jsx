@@ -32,7 +32,7 @@ const NavItem = ({ navSize, title, Icon, active, description }) => {
           <MenuButton w="100%">
             <Flex>
               <Icon
-                as={FiHome}
+                // as={FiHome}
                 fontSize="xl"
                 color={active ? "green" : "gray"}
               />
