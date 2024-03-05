@@ -7,13 +7,12 @@ import Footer from "./components/Footer";
 import Project from "./components/Project";
 import Skill from "./components/Skill";
 import React from "react";
-import { useEffect } from "react";
 
 function App() {
   return (
     <>
       <div>
-        <Main />
+        <Main className="main" />
         <SideNav className="sidenav" />
         <Project />
         <About />
