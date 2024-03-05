@@ -8,7 +8,7 @@ import { RxAvatar } from "react-icons/rx";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { AiFillCamera } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
-// import { FiHome } from "react-icons/fi";
+import { FiHome } from "react-icons/fi";
 
 const Sidenav = () => {
   //NavBar is at the large state default
@@ -41,7 +41,7 @@ const Sidenav = () => {
               else changeNavSize("small");
             }}
           />
-          <NavItem navSize={navSize} Icon={FiMenu} title="Home" />
+          <NavItem navSize={navSize} Icon={FiHome} title="Home" />
 
           <NavItem navSize={navSize} Icon={VscProject} title="Projects" />
           <NavItem navSize={navSize} Icon={RxAvatar} title="About" />

@@ -32,6 +32,7 @@ const NavItem = ({ navSize, title, Icon, active, description }) => {
           <MenuButton w="100%">
             <Flex>
               <Icon
+                //as property is giving a console error
                 // as={FiHome}
                 fontSize="xl"
                 color={active ? "green" : "gray"}
